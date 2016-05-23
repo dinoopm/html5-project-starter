@@ -1,0 +1,6 @@
+# nodejs
+node_modules/*
+
+# generated assets
+/.sass-cache/*
+/assets/css
