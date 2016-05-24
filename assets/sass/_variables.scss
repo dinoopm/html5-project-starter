@@ -1,3 +1,20 @@
+//Scaffolding
+
 $body-bg:    #F9F9F9;
-$common-font-color: #AFB1B2;
-$primary-color: #D70F64;
+$text-color: #AFB1B2;
+$link-color: #D70F64;
+$link-hover-color : #D70F64;
+
+// Typography
+
+$font-family: "Times New Roman", Georgia, Serif";
+$font-size-base: 12px;
+$headings-font-family: "Times New Roman", Georgia, Serif";
+$headings-font-weight: 500;
+
+//Media queries breakpoints
+
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
