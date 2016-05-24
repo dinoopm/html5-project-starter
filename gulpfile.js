@@ -23,16 +23,19 @@ gulp.task('cleanstyles', function () {
     .pipe(clean());
 });
 
-gulp.task('cssmin',['sass'], function() {
+gulp.task('cleanjs', function () {
+  return gulp.src('./assets/js/*.min.js', {read: false})
+    .pipe(clean());
+});
+
+gulp.task('cssmin',['sass','autoprefixer'], function() {
     return gulp.src('./assets/css/*.css')
 		.pipe(cssmin())
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest('./assets/css'));
 });
 
-
-
-gulp.task('compress', function() {
+gulp.task('compress',['cleanjs'], function() {
   gulp.src('./assets/js/*.js')
     .pipe(minify({
         ext:{
